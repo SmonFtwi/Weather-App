@@ -3,6 +3,7 @@ body{
    background: url('./360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg');
    background-size:cover;
    background-repeat: no-repeat;
+   height: 100vh;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
       
 }
 header h1{
-    font-size:xx-large;
     grid-area: 0,1;
 }
 header div{
@@ -24,29 +24,69 @@ header div{
     align-items: center;
     grid-area: 2,4;
     border-radius: 5px;
+   
 
     
 }
 
 div input{
-  padding: 1vh  4vw;
+  padding: 1.5vh  5vw;
   border: 0px;
-  width: 90%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 div input:hover{
-    padding: 1vh  5vw;
+    padding: 1.5vh  5vw;
     border: 0px;
     cursor: pointer;
+  
   }
 div button{
-    padding: 1vh;
+    padding: 1.5vh;
     border: 0px;
-    background-color: greenyellow;
+    background-color: rgb(139, 214, 227);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
 div button:hover{
-    padding: 1vh;
-    border: 0px;
-    background-color: greenyellow;
+    padding: 1.5vh;
+    background-color: rgb(82, 154, 167);
     cursor: pointer;
+  }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.temp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.addInfo{
+    display: flex;
+    
+}
+.addInfo h4{
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: medium; /* Decrease font size for mobile devices */
+    }
+    #generateImg{
+        display: none;
+    }
+    div input{
+        padding: 0.5vh  2vw;
+        border: 0px;
+        border-radius: 8px;
+      }
   }
