@@ -1,0 +1,52 @@
+
+body{
+   background: url('./360_F_461232389_XCYvca9n9P437nm3FrCsEIapG4SrhufP.jpg');
+   background-size:cover;
+   background-repeat: no-repeat;
+}
+
+header {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 0.5px solid black;
+    padding-left: 5vh;
+    
+     
+      
+}
+header h1{
+    font-size:xx-large;
+    grid-area: 0,1;
+}
+header div{
+    display: flex;
+    align-items: center;
+    grid-area: 2,4;
+    border-radius: 5px;
+
+    
+}
+
+div input{
+  padding: 1vh  4vw;
+  border: 0px;
+  width: 90%;
+}
+div input:hover{
+    padding: 1vh  5vw;
+    border: 0px;
+    cursor: pointer;
+  }
+div button{
+    padding: 1vh;
+    border: 0px;
+    background-color: greenyellow;
+  }
+
+div button:hover{
+    padding: 1vh;
+    border: 0px;
+    background-color: greenyellow;
+    cursor: pointer;
+  }
